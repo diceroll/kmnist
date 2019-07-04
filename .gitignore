@@ -105,4 +105,3 @@ venv.bak/
 
 # dirs and files
 output/
-data/*.npz
