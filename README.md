@@ -40,16 +40,16 @@
     models = [
             ('SEResNeXt101', None,
             ['output/20190611_2314/best_model.npz',
-            'output/20190612_0039/best_model.npz',
-            'output/20190612_1230/best_model.npz',
-            'output/20190612_1537/best_model.npz',
-            'output/20190612_2333/best_model.npz']),
+             'output/20190612_0039/best_model.npz',
+             'output/20190612_1230/best_model.npz',
+             'output/20190612_1537/best_model.npz',
+             'output/20190612_2333/best_model.npz']),
             ('SEResNeXt101', resize,
             ['output/20190613_1544/best_model.npz',
-            'output/20190613_1609/best_model.npz',
-            'output/20190614_0537/best_model.npz',
-            'output/20190614_0852/best_model.npz',
-            'output/20190614_1808/best_model.npz']),
+             'output/20190613_1609/best_model.npz',
+             'output/20190614_0537/best_model.npz',
+             'output/20190614_0852/best_model.npz',
+             'output/20190614_1808/best_model.npz']),
         ]
     ```
 
