@@ -35,7 +35,8 @@ def main():
     parser.add_argument('--report_trigger', '-rt', type=str, default='1e',
                         help='Interval for reporting(Ex.100i, default:1e)')
     parser.add_argument('--save_trigger', '-st', type=str, default='1e',
-                        help='Interval for saving the model(Ex.100i, default:1e)')
+                        help='Interval for saving the model'
+                             '(Ex.100i, default:1e)')
     parser.add_argument('--load_model', '-lm', type=str, default=None,
                         help='Path of the model object to load')
     parser.add_argument('--load_optimizer', '-lo', type=str, default=None,
@@ -152,8 +153,9 @@ def main():
         trigger=best_model_trigger)
     best_loss_model_trigger = triggers.MinValueTrigger(
         'val/main/loss', trigger=(1, 'epoch'))
-    trainer.extend(extensions.snapshot_object(
-        model, filename='best_loss_model.npz'), trigger=best_loss_model_trigger)
+    trainer.extend(
+        extensions.snapshot_object(model, filename='best_loss_model.npz'),
+        trigger=best_loss_model_trigger)
     trainer.extend(extensions.snapshot_object(
         optimizer, filename='best_loss_optimizer.npz'),
         trigger=best_loss_model_trigger)

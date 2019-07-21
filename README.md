@@ -1,6 +1,6 @@
 # ProbSpace 「くずし字」識別チャレンジ
 
-https://prob.space/competitions/kuzushiji-mnist
+<https://prob.space/competitions/kuzushiji-mnist>
 
 ## 使い方
 
