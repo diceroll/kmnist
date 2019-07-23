@@ -81,7 +81,7 @@ def main():
                 test_iter.reset()
 
                 pred = []
-                with function.no_backprop_mode(), chainer.using_config(
+                with chainer.no_backprop_mode(), chainer.using_config(
                         'train', False):
                     pbar4 = trange(
                         n_data // batchsize + (n_data % batchsize != 0),
